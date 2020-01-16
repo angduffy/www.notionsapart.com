@@ -1,0 +1,23 @@
+; A BIND file is a .TXT file that's used to export
+; DNS records from one domain to another. BIND
+; files are commonly used by lots of domain
+; registrars, so they're a good choice if you're
+; exporting resource records to a domain that's
+; managed by a different registrar.
+
+notionsapart.com. 21600 IN SOA ns-cloud-a1.googledomains.com. cloud-dns-hostmaster.google.com. 23 21600 3600 259200 300
+notionsapart.com. 21600 IN NS ns-cloud-a1.googledomains.com.
+notionsapart.com. 21600 IN NS ns-cloud-a2.googledomains.com.
+notionsapart.com. 21600 IN NS ns-cloud-a3.googledomains.com.
+notionsapart.com. 21600 IN NS ns-cloud-a4.googledomains.com.
+notionsapart.com. 60 IN A 185.199.108.153
+notionsapart.com. 60 IN A 185.199.109.153
+notionsapart.com. 60 IN A 185.199.110.153
+notionsapart.com. 60 IN A 185.199.111.153
+notionsapart.com. 3600 IN MX 5 gmr-smtp-in.l.google.com.
+notionsapart.com. 3600 IN MX 10 alt1.gmr-smtp-in.l.google.com.
+notionsapart.com. 3600 IN MX 20 alt2.gmr-smtp-in.l.google.com.
+notionsapart.com. 3600 IN MX 30 alt3.gmr-smtp-in.l.google.com.
+notionsapart.com. 3600 IN MX 40 alt4.gmr-smtp-in.l.google.com.
+_domainconnect.notionsapart.com. 21600 IN CNAME connect.domains.google.com.
+www.notionsapart.com. 60 IN CNAME gordonrudman.github.io.

@@ -1,0 +1,39 @@
+# A .YAML file is used to export DNS records to a
+# domain managed by Google Cloud. The format is
+# exclusive to Google Cloud DNS.
+
+---
+kind: dns#resourceRecordSet
+name: notionsapart.com.
+rrdatas:
+- 185.199.108.153
+- 185.199.109.153
+- 185.199.110.153
+- 185.199.111.153
+ttl: 60
+type: A
+---
+kind: dns#resourceRecordSet
+name: notionsapart.com.
+rrdatas:
+- 5 gmr-smtp-in.l.google.com.
+- 10 alt1.gmr-smtp-in.l.google.com.
+- 20 alt2.gmr-smtp-in.l.google.com.
+- 30 alt3.gmr-smtp-in.l.google.com.
+- 40 alt4.gmr-smtp-in.l.google.com.
+ttl: 3600
+type: MX
+---
+kind: dns#resourceRecordSet
+name: _domainconnect.notionsapart.com.
+rrdatas:
+- connect.domains.google.com.
+ttl: 21600
+type: CNAME
+---
+kind: dns#resourceRecordSet
+name: www.notionsapart.com.
+rrdatas:
+- gordonrudman.github.io.
+ttl: 60
+type: CNAME
